@@ -8,10 +8,10 @@ server:
 zuul:
   routes:
     api:
-      path: /api/**
+      path: https://kickytable.herokuapp.com/api/**
       url: https://shanghai-server.herokuapp.com/
     client:
-      path: /**
+      path: https://kickytable.herokuapp.com/**
       url: https://shanghai-client.herokuapp.com/#
     apilocal:
       path: /api/**
