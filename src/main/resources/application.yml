@@ -1,9 +1,16 @@
+server:
+  port: 8000
+
+#api:
+#  ribbon:
+#    listOfServers:
+
 zuul:
   routes:
+    api:
+      path: /api/**
+      url: http://localhost:8082 # TODO: url of backend
     client:
-      path: /client/**
-      url: http://httpbin.org/get
+      path: /**
+      url: http://localhost:8080 # TODO: url of client
 
-eureka:
-  client:
-    enabled: false
