@@ -12,7 +12,7 @@ zuul:
       url: https://shanghai-server.herokuapp.com/
     client:
       path: /**
-      url: https://shanghai-client.herokuapp.com/#
+      url: https://shanghai-client.herokuapp.com/
 #    apilocal:
 #      path: /api/**
 #      url: http://localhost:8082/
