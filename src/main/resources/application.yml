@@ -9,8 +9,8 @@ zuul:
   routes:
     api:
       path: /api/**
-      url: http://localhost:8082 # TODO: url of backend
+      url: https://shanghai-server.herokuapp.com/ # TODO: url of backend
     client:
       path: /**
-      url: http://localhost:8080 # TODO: url of client
+      url: https://shanghai-client.herokuapp.com/ # TODO: url of client
 
