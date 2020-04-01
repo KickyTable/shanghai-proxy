@@ -1,22 +1,12 @@
 server:
   port: 8000
 
-#api:
-#  ribbon:
-#    listOfServers:
-
 zuul:
   routes:
     api:
       path: /api/**
-      url: https://shanghai-server.herokuapp.com/
+      url: ${shanghai.api.hostname}
     client:
       path: /**
-      url: https://shanghai-client.herokuapp.com/
-#    apilocal:
-#      path: /api/**
-#      url: http://localhost:8082/
-#    clientlocal:
-#      path: /**
-#      url: http://localhost:8080/#
+      url: ${shanghai.client.hostname}
 
