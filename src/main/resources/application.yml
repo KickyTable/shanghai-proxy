@@ -1,14 +1,8 @@
 zuul:
   routes:
-    get:
-      path: /get/**
+    client:
+      path: /client/**
       url: http://httpbin.org/get
-    links:
-      path: /links/**
-      url: http://httpbin.org/links
-    images:
-      path: /image/**
-      url: http://httpbin.org/image
 
 eureka:
   client:
