@@ -8,15 +8,15 @@ server:
 zuul:
   routes:
     api:
-      path: https://kickytable.herokuapp.com/api/**
+      path: /api/**
       url: https://shanghai-server.herokuapp.com/
     client:
-      path: https://kickytable.herokuapp.com/**
-      url: https://shanghai-client.herokuapp.com/#
-    apilocal:
-      path: /api/**
-      url: http://localhost:8082/
-    clientlocal:
       path: /**
-      url: http://localhost:8080/#
+      url: https://shanghai-client.herokuapp.com/#
+#    apilocal:
+#      path: /api/**
+#      url: http://localhost:8082/
+#    clientlocal:
+#      path: /**
+#      url: http://localhost:8080/#
 
